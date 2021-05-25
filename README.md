@@ -22,4 +22,5 @@ SharePoint Online
 Power Automate / Flow with premium connectors (Requires Power Automate Per User license, $15/mo)
 
 How it works:
+
 When a ticket is marked as Resolved, a webhook fires and initiates the Flow.  The ticket data then gets processed and added to SharePoint.  In the event a ticket was resolved, re-opened, and resolved again, it will simply overwrite the previous entry.
