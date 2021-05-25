@@ -1,0 +1,121 @@
+{
+  "displayName": "RepairShopr Tickets 2",
+  "columns": [
+
+    {
+    "name":"TicketNumber",
+    "displayName":"Ticket Number",    
+    "indexed":true,    
+    "number": 
+        {
+        "decimalPlaces": "none",
+        "displayAs": "number"
+        }
+    },
+    {
+    "name":"TicketLink",
+    "displayName":"Link",
+    "text":
+        {
+        "allowMultipleLines": true,
+        "appendChangesToExistingText": false,
+        "textType": "richText",
+        "linesForEditing": 1
+        }
+    },
+    {
+    "name":"Customer",
+    "displayName":"Customer",
+    "indexed":true,
+    "text":
+        {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
+        }
+    },
+    {
+    "name":"Contact",
+    "displayName":"Contact",
+    "indexed":true,    
+    "text":
+        {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
+        }
+    },
+    {
+    "name":"AssignedTo",
+    "displayName":"Assigned To",
+    "indexed":true,    
+    "text":
+        {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
+        }
+    },
+    {
+    "name":"TicketType",
+    "displayName":"Ticket Type",
+    "indexed":true,
+    "text":
+        {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
+        }
+    },   
+    {
+    "name":"Comments",
+    "displayName":"Comments",
+    "text":
+        {
+        "allowMultipleLines": true,
+        "appendChangesToExistingText": false,
+        "textType": "richText",
+        "linesForEditing": 6
+        }
+    },
+    {
+    "name":"CreatedAt",
+    "displayName":"Created At",
+    "dateTime": 
+        {
+        "displayAs": "standard",
+        "format": "dateTime"
+        }
+    },
+    {
+    "name":"ResolvedAt",
+    "displayName":"Resolved At",
+    "dateTime": 
+        {
+        "displayAs": "standard",
+        "format": "dateTime"
+        }
+    },
+    {
+    "name":"TicketID",
+    "displayName":"Ticket ID",    
+    "number": 
+        {
+        "decimalPlaces": "none",
+        "displayAs": "number"
+        }
+    },
+    {
+    "name":"CustomerID",
+    "displayName":"Customer ID",    
+    "number": 
+        {
+        "decimalPlaces": "none",
+        "displayAs": "number"
+        }
+    }   
+  ],
+  "list": {
+    "template": "genericList"
+  }
+}
