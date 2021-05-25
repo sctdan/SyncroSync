@@ -30,7 +30,7 @@ When a ticket is marked as Resolved, a webhook fires and initiates the Flow.  Th
 # Setup Instructions:
 
 ## SharePoint List Creation
-If you have the ability to use the Graph API, that is the fastest option.  You don't need an azure app or anything setup, Graph Explorer lets you interact with your data without one. You can create the list manually, just reference the JSON file for the columns and their settings.  Ignore this section if you will be creating the list manually.  Create the list before moving on.
+If you have the ability to use the Graph API, that is the fastest option.  You don't need an azure app or anything setup, Graph Explorer lets you interact with your data without one. You can create the list manually, just reference the JSON file for the columns and their settings.  Ignore this section if you will be creating the list manually.  
 
 1.	Go here and sign-in on the left side: https://developer.microsoft.com/en-us/graph/graph-explorer
 1.	Click on the gear icon next to your name and click Select Permissions.  Grant yourself:
