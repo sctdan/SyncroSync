@@ -11,5 +11,6 @@ This will also work for RepairShopr, just substitute repairshopr for syncro wher
 Additional (optional) features:
 
 -Ticket Reopen –  Set a date, close the ticket, it’ll automatically reopen on the date specified
+
 -KB Add – If working a ticket that needs further documentation, you can mark it in the ticket and it’ll automatically get added to a shared To-Do list
 
