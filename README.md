@@ -29,20 +29,22 @@ When a ticket is marked as Resolved, a webhook fires and initiates the Flow.  Th
 
 # Setup Instructions:
 
-## SharePoint List Creation
+
+
+## SharePoint Ticket List Creation
 If you have the ability to use the Graph API, that is the fastest option.  You don't need an azure app or anything setup, Graph Explorer lets you interact with your data without one. You can create the list manually, just reference the JSON file for the columns and their settings.  Ignore this section if you will be creating the list manually.  
 
 1.	Go here and sign-in on the left side: https://developer.microsoft.com/en-us/graph/graph-explorer
-1.	Click on the gear icon next to your name and click Select Permissions.  Grant yourself:
+1.	Click on the ellipses next to your name and click Select Permissions.  Grant yourself:
     1.	Sites.Manage.All
 1.	Will this list live on your default SharePoint site?  If yes, move to step 4.  If not, we need to find the site id.
     1. In Graph Explorer, we can run a query to find that.
         1. GET https://graph.microsoft.com/v1.0/sites/HOSTNAME:/sites/SITENAME
             1. Where HOSTNAME = yourtenant.sharepoint.com
             1. Where SITENAME = name of the site as shown in the URL
-            1. Copy the id property that is returned
+            1. The ID field returned will look like _skycamplabs.sharepoint.com, *c9622d08-a30b-4acd-a363-bb7a664a5d18* ,8207f6c1-e48e-4c36-9688-c5b69e93706f_, 3 values separated by commas.  You want to copy the middle value.
     1. Alternatively, append _\_api/site/id_ to the end of the site url and copy the Edm.Guid field 
-1.	Modify the JSON code (optional)
+1.	Copy the the SyncroSync-createList.json script and modify the JSON (optional)
     1.	Line 2: This is the name of the SharePoint list.  You can change that if you’d like.
     1.	For any of the columns, you can change the Display Name value (NOT the name value).
     1.	Do not change anything else
@@ -56,7 +58,7 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
             1.	Key:  content-type
             1.	Value:  application/json
             1.	Click Add
-        1.	Under the Request Body tab, paste in the JSON data
+        1.	Under the Request Body tab, paste in the JSON data from above
         1.	Click Run Query
         1.	If successful, you should get a ‘Created – 201’ response with the new list properties
             1.	If you get a permission error, give yourself the following permissions and try again
@@ -67,7 +69,7 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
 
 1. There is a Link column that will open the ticket in Syncro, but if you’d also like to be able to click on the ticket number to open it in RS, do the following (this does not apply when viewing the item in the form pane, so that’s what the Link column is for)
   1.	Right-Click on the Ticket Number column header and go to Column Settings -> Format this column.  Click on Advanced Mode at the bottom of the window that pops up.
-  2.	Replace YOUR-RS-DOMAIN with your actual Syncro subdomain, then paste this in:
+  2.	Replace YOUR-SYNCRO-DOMAIN with your actual Syncro subdomain, then paste this in:
 
     {
       "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
@@ -84,3 +86,13 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
 
 _If you use a light theme, change the “color” value from “white” to “black” or whatever fits your theme.  You can use hex color codes, just wrap it in double quotes._
 
+
+
+
+## Syncro
+1. Go to Admin -> Notification Center
+2. Create a New Notification Set
+    3. Name: SyncroSync (or whatever you want, has no impact elsewhere)
+    4. Paste the Flow webhook into the Webhook URL box
+    5. Find the 'Ticket - Was Resolved' event and check the Webhook box
+    6. Click Create Notification Set
