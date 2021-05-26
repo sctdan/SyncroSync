@@ -20,6 +20,7 @@ This will also work for RepairShopr, just substitute repairshopr for syncro wher
 
 - SharePoint Online
 - Power Automate / Flow with premium connectors (Requires Power Automate Per User license, $15/mo)
+- Service account with the Per User license
 
 ## How it works:
 
