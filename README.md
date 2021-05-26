@@ -6,7 +6,7 @@ Syncro Sync is a simple utility that will automatically sync your Syncro or Repa
 
 Our production SharePoint list contains nearly 75,000 tickets, search is still fast and accurate.
 
-This will also work for RepairShopr, just substitute repairshopr for syncro wherever you see it.
+This will also work for RepairShopr, just substitute Repairshopr for Syncro wherever you see it.
 
 ### Additional (optional) features:
 
@@ -66,9 +66,9 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
                 1.	Sites.Read.All
                 1.	Sites.ReadWrite.All
 
-## SharePoint List Formatting
+### Ticket List Formatting
 
-1. There is a Link column that will open the ticket in Syncro, but if you’d also like to be able to click on the ticket number to open it in RS, do the following (this does not apply when viewing the item in the form pane, so that’s what the Link column is for)
+1. There is a Link column that will open the ticket in Syncro, but if you’d also like to be able to click on the ticket number to open it in Syncro, do the following (this does not apply when viewing the item in the form pane, so that’s what the Link column is for)
   1.	Right-Click on the Ticket Number column header and go to Column Settings -> Format this column.  Click on Advanced Mode at the bottom of the window that pops up.
   2.	Replace YOUR-SYNCRO-DOMAIN with your actual Syncro subdomain, then paste this in:
 
@@ -88,6 +88,33 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
 _If you use a light theme, change the “color” value from “white” to “black” or whatever fits your theme.  You can use hex color codes, just wrap it in double quotes._
 
 
+## ReOpen List Creation
+Following the same steps as the ticket list creation, use the SyncroSync-ReOpenList.json file to create that list
+
+## KB ToDo List
+If you want to utilize the KB functionality, create a shared ToDo list.
+
+
+## Power Automate
+1. Go to the Power Automate site https://us.flow.microsoft.com/
+    1. Click on Solutions
+    1. Click Import 
+    1. Select the SyncroSync_vx.zip file and click Next
+    1. Assuming it doesn't give any errors, click Import
+    
+1. You'll be prompted to set some environment variables now
+    1. Notification List- List of email addresses to notifiy if the flow fails, separated by semi-colon
+    1. SP Site Address- Full URL or ID of the site where your list will live.  If root site, it's just https://yourdomain.sharepoint.com/
+    1. Syncro Subdomain - The X in https://X.syncromsp.com
+    1. SP Ticket List Name - The exact name or ID of the ticket list
+    1. Ticket Type Ignore - If you want to prevent certain Problem Types from syncing, you can add those here.  Must be formatted like so:   ["Alerts","whatever"]   
+    1. SP ReOpen List Name - The exact name or ID of the reopen list
+    1. ToDo List ID --- ###What happens if they don't set a value?
+
+1. Click Import
+1. Once finished, click on the SyncroSync solution to open, then click Edit
+1. Click on the 'When a HTTP request is received' action to expand it
+1. Copy the HTTP POST URL provided there.  If you don't see it, Save the flow and it should generate.
 
 
 ## Syncro
@@ -97,3 +124,13 @@ _If you use a light theme, change the “color” value from “white” to “b
     4. Paste the Flow webhook into the Webhook URL box
     5. Find the 'Ticket - Was Resolved' event and check the Webhook box
     6. Click Create Notification Set
+
+### To utilize the ReOpen and KB functionality, configure a Custom Ticket Field Type.  If you don't want to utilize either, just don't create the fields
+1. Go to Admin -> Tickets -> Ticket Custom Fields
+2. Create New Custom Field Type.  Name it whatever you'd like, we used 'Post-Ticket Actions'
+3. Create New Field (Names must be exactly what it defined below)
+	4. Name: Reopen On - Date Field - Hidden=true
+	5. Name: KB Article - Check box - Hidden=true
+	6. Name: KB Title - Text Field - Hidden=true
+
+
