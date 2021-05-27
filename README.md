@@ -51,20 +51,21 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
     1.	Do not change anything else
 1.	Create the list
     1.	In Graph Explorer, start a new query
-        1.	POST
-        1.	If using root site:   https://graph.microsoft.com/v1.0/sites/root/lists
-        1.	If using different site:  https://graph.microsoft.com/v1.0/sites/{site-id}/lists 
-            1.	Where site-id is the value you copied above.  You do not need the { }
-        1.	Under the Request Header tab, add a key/value pair
-            1.	Key:  content-type
-            1.	Value:  application/json
-            1.	Click Add
-        1.	Under the Request Body tab, paste in the JSON data from above
-        1.	Click Run Query
-        1.	If successful, you should get a ‘Created – 201’ response with the new list properties
+        1. POST
+        1. If using root site:   https://graph.microsoft.com/v1.0/sites/root/lists
+        1. If using different site:  https://graph.microsoft.com/v1.0/sites/{site-id}/lists 
+            1. Where site-id is the value you copied above.  You do not need the { }
+        1. Under the Request Header tab, add a key/value pair
+            1. Key:  content-type
+            1. Value:  application/json
+            1. Click Add
+        1. Under the Request Body tab, paste in the JSON data from above
+        1. Click Run Query
+        1. If successful, you should get a ‘Created – 201’ response with the new list properties
             1.	If you get a permission error, give yourself the following permissions and try again
-                1.	Sites.Read.All
-                1.	Sites.ReadWrite.All
+                1. Sites.Read.All
+                1. Sites.ReadWrite.All
+
 
 ### Ticket List Formatting
 
@@ -110,6 +111,14 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     1. Ticket Type Ignore - If you want to prevent certain Problem Types from syncing, you can add those here.  Must be formatted like so:   ["Alerts","whatever"]   
     1. SP ReOpen List Name - The exact name or ID of the reopen list
     1. ToDo List ID --- ###What happens if they don't set a value?
+    2. Enable KB - Set to No if you don't want to utilize the KB ToDo functionality
+    3. Enable ReOpen - Set to No if you don't want to utilize the ticket ReOpen functionality
+    4. Timezone - Enter the name of your timezone.  Standard US ones are-
+    	5. Eastern Standard Time
+    	6. Central Standard Time
+    	7. Mountain Standard Time
+    	8. Pacific Standard Time
+    	9. See here for an entiere list- https://ss64.com/nt/timezones.html
 
 1. Click Import
 1. Once finished, click on the SyncroSync solution to open, then click Edit
