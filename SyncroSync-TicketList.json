@@ -98,7 +98,8 @@
     },
     {
     "name":"TicketID",
-    "displayName":"Ticket ID",    
+    "displayName":"Ticket ID",
+    "indexed":true,
     "number": 
         {
         "decimalPlaces": "none",
@@ -107,7 +108,8 @@
     },
     {
     "name":"CustomerID",
-    "displayName":"Customer ID",    
+    "displayName":"Customer ID",
+          "indexed":true,
     "number": 
         {
         "decimalPlaces": "none",
