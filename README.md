@@ -2,11 +2,11 @@
 Syncro Sync is a simple utility that will automatically sync your Syncro or RepairShopr tickets to SharePoint.  This provides a couple great benefits:
 
 -	Searching!  You can search, sort, and filter based on any ticket criteria.  Yes, you can search ticket comments as well.
--	If you happen to leave Syncro, you have all your ticket history to reference.
+-	If you happen to leave Syncro, you have all your ticket history to reference or import into the new system.
 
 Our production SharePoint list contains nearly 75,000 tickets, search is still fast and accurate.
 
-This will also work for RepairShopr, just substitute Repairshopr for Syncro wherever you see it.
+> This will also work for RepairShopr, just substitute Repairshopr for Syncro wherever you see it.
 
 ### Additional (optional) features:
 
