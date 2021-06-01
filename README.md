@@ -124,7 +124,7 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     1. Select the SyncroSync_vx.zip file and click Next
     1. Assuming it doesn't give any errors, click Import
     
-1. You'll be prompted to select or create soem Connections.  This is how Flow authenticates you to various services.
+1. You'll be prompted to select or create some Connections.  This is how Flow authenticates to various services.
 	1. For each Connection, Select 'New Connection' and select the account to use.
 
 
