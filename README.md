@@ -44,6 +44,7 @@ If you have the ability to use the Graph API, that is the fastest option.  You d
 1.	Will this list live on your default SharePoint site?  If yes, move to step 4.  If not, we need to find the site id.
     1. In Graph Explorer, we can run a query to find that.
         1. GET https://graph.microsoft.com/v1.0/sites/HOSTNAME:/sites/SITENAME
+	        1. _NOTE THE COLON AFTER HOSTNAME_
             1. Where HOSTNAME = yourtenant.sharepoint.com
             1. Where SITENAME = name of the site as shown in the URL
             1. The ID field returned will look like _skycamplabs.sharepoint.com, *c9622d08-a30b-4acd-a363-bb7a664a5d18* ,8207f6c1-e48e-4c36-9688-c5b69e93706f_, 3 values separated by commas.  You want to copy the middle value.
