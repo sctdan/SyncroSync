@@ -111,7 +111,7 @@
     {
     "name":"CustomerID",
     "displayName":"Customer ID",
-          "indexed":true,
+    "indexed":true,
     "text":
         {
         "allowMultipleLines": false,
