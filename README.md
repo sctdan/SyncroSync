@@ -34,6 +34,7 @@ When a ticket is marked as Resolved, a webhook fires and initiates the Flow.  Th
 
 # SharePoint
 
+
 ## Ticket List Creation
 If you have the ability to use the Graph API, that is the fastest option.  You don't need an azure app or anything setup, Graph Explorer lets you interact with your data without one. You can create the list manually, just reference the JSON file for the columns and their settings.  Ignore this section if you will be creating the list manually.  
 
@@ -113,6 +114,7 @@ Following the same steps as the ticket list creation, use the SyncroSync-ReOpenL
 If you want to utilize the KB functionality, create a shared ToDo list.
 
 
+
 # Import Solution into Power Automate
 1. Go to the Power Automate site https://us.flow.microsoft.com/
     1. Click on Solutions
@@ -143,7 +145,8 @@ If you want to utilize the KB functionality, create a shared ToDo list.
 1. Copy the HTTP POST URL provided there.  If you don't see it, Save the flow and it should generate.
 
 
-# Syncro Set
+
+# Syncro
 
 ## Notification Set
 1. Go to Admin -> Notification Center
