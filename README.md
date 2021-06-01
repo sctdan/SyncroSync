@@ -110,6 +110,7 @@ _If you use a light theme, change the “color” value from “white” to “b
 
 ## ReOpen List Creation
 Following the same steps as the ticket list creation, use the SyncroSync-ReOpenList.json file to create that list
+Post-creation- Rename the Title field to Subject if you'd prefer
 
 ## KB ToDo List
 If you want to utilize the KB functionality, create a shared ToDo list.
@@ -123,7 +124,11 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     1. Select the SyncroSync_vx.zip file and click Next
     1. Assuming it doesn't give any errors, click Import
     
-1. You'll be prompted to set some environment variables now
+1. You'll be prompted to select or create soem Connections.  This is how Flow authenticates you to various services.
+	1. For each Connection, Select 'New Connection' and select the account to use.
+
+
+3. You'll be prompted to set some environment variables now
     1. Notification List- List of email addresses to notifiy if the flow fails, separated by semi-colon
     1. SP Site Address- Full URL or ID of the site where your list will live.  If root site, it's just https://yourdomain.sharepoint.com/
     1. Syncro Subdomain - The X in https://X.syncromsp.com
