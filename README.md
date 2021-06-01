@@ -95,7 +95,7 @@ _If you use a light theme, change the “color” value from “white” to “b
 ### Create better default view
 1. In your ticket list, click the gear icon up top and go to list settings
 2. Click Create View at the very bottom
-	3. Choose Standard View
+3. Choose Standard View
 	4. Name: Whatever you want
 	5. Check 'Make this the default view'
 	6. All the default columns should already be selected, you can change the sort order if you'd like
