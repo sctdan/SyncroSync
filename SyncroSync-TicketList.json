@@ -6,10 +6,11 @@
     "name":"TicketNumber",
     "displayName":"Ticket Number",    
     "indexed":true,    
-    "number": 
+    "text":
         {
-        "decimalPlaces": "none",
-        "displayAs": "number"
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
         }
     },
     {
@@ -100,20 +101,22 @@
     "name":"TicketID",
     "displayName":"Ticket ID",
     "indexed":true,
-    "number": 
+    "text":
         {
-        "decimalPlaces": "none",
-        "displayAs": "number"
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
         }
     },
     {
     "name":"CustomerID",
     "displayName":"Customer ID",
           "indexed":true,
-    "number": 
+    "text":
         {
-        "decimalPlaces": "none",
-        "displayAs": "number"
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
         }
     }   
   ],
