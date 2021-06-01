@@ -96,14 +96,14 @@ _If you use a light theme, change the “color” value from “white” to “b
 1. In your ticket list, click the gear icon up top and go to list settings
 2. Click Create View at the very bottom
 3. Choose Standard View
-	4. Name: Whatever you want
-	5. Check 'Make this the default view'
-	6. All the default columns should already be selected, you can change the sort order if you'd like
-	7. Sort:
-		8.  First sort by Resolved At in descending order
-	9.  Item Limit:
-		10. 50 - Display items in batches
-	11. Click OK
+4. Name: Whatever you want
+	1. Check 'Make this the default view'
+	1. All the default columns should already be selected, you can change the sort order if you'd like
+	1. Sort:
+			8. First sort by Resolved At in descending order
+	1.  Item Limit:
+			10. 50 - Display items in batches
+	1. Click OK
 
 
 
