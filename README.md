@@ -156,7 +156,9 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     1. Find the 'Ticket - Was Resolved' event and check the Webhook box
     1. Click Create Notification Set
 
-## To utilize the ReOpen and KB functionality, configure a Custom Ticket Field Type.  If you don't want to utilize either, just don't create the fields
+### To utilize the ReOpen and KB functionality, configure a Custom Ticket Field Type.  
+If you don't want to utilize either, just don't create the fields
+
 1. Go to Admin -> Tickets -> Ticket Custom Fields
 1. Create New Custom Field Type.  Name it whatever you'd like, we used 'Post-Ticket Actions'
 1. Create New Field (Names must be exactly what it defined below)
