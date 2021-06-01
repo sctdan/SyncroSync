@@ -5,9 +5,10 @@
             "name": "TicketNumber",
             "displayName": "Ticket Number",
             "indexed": true,
-            "number": {
-                "decimalPlaces": "none",
-                "displayAs": "number"
+            "text": {
+                "allowMultipleLines": false,
+                "appendChangesToExistingText": false,
+                "textType": "plain"
             }
         },
         {
@@ -52,9 +53,10 @@
         {
             "name": "TicketID",
             "displayName": "Ticket ID",
-            "number": {
-                "decimalPlaces": "none",
-                "displayAs": "number"
+            "text": {
+                "allowMultipleLines": false,
+                "appendChangesToExistingText": false,
+                "textType": "plain"
             }
         }
     ],
