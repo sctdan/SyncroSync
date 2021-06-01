@@ -150,18 +150,18 @@ If you want to utilize the KB functionality, create a shared ToDo list.
 
 ## Notification Set
 1. Go to Admin -> Notification Center
-2. Create a New Notification Set
-    3. Name: SyncroSync (or whatever you want, has no impact elsewhere)
-    4. Paste the Flow webhook into the Webhook URL box
-    5. Find the 'Ticket - Was Resolved' event and check the Webhook box
-    6. Click Create Notification Set
+1. Create a New Notification Set
+    1. Name: SyncroSync (or whatever you want, has no impact elsewhere)
+    1. Paste the Flow webhook into the Webhook URL box
+    1. Find the 'Ticket - Was Resolved' event and check the Webhook box
+    1. Click Create Notification Set
 
 ## To utilize the ReOpen and KB functionality, configure a Custom Ticket Field Type.  If you don't want to utilize either, just don't create the fields
 1. Go to Admin -> Tickets -> Ticket Custom Fields
-2. Create New Custom Field Type.  Name it whatever you'd like, we used 'Post-Ticket Actions'
-3. Create New Field (Names must be exactly what it defined below)
-	4. Name: Reopen On - Date Field - Hidden=true
-	5. Name: KB Article - Check box - Hidden=true
-	6. Name: KB Title - Text Field - Hidden=true
+1. Create New Custom Field Type.  Name it whatever you'd like, we used 'Post-Ticket Actions'
+1. Create New Field (Names must be exactly what it defined below)
+	1. Name: Reopen On - Date Field - Hidden=true
+	1. Name: KB Article - Check box - Hidden=true
+	1. Name: KB Title - Text Field - Hidden=true
 
 
