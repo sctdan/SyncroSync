@@ -100,9 +100,9 @@ _If you use a light theme, change the “color” value from “white” to “b
 	1. Check 'Make this the default view'
 	1. All the default columns should already be selected, you can change the sort order if you'd like
 	1. Sort:
-			8. First sort by Resolved At in descending order
+		1. First sort by Resolved At in descending order
 	1.  Item Limit:
-			10. 50 - Display items in batches
+		1. 50 - Display items in batches
 	1. Click OK
 
 
