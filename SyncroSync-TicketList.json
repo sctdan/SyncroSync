@@ -14,17 +14,6 @@
         }
     },
     {
-    "name":"TicketLink",
-    "displayName":"Link",
-    "text":
-        {
-        "allowMultipleLines": true,
-        "appendChangesToExistingText": false,
-        "textType": "richText",
-        "linesForEditing": 1
-        }
-    },
-    {
     "name":"Customer",
     "displayName":"Customer",
     "indexed":true,
@@ -35,6 +24,18 @@
         "textType": "plain"
         }
     },
+    {
+    "name":"TicketLink",
+    "displayName":"Link",
+    "text":
+        {
+        "allowMultipleLines": true,
+        "appendChangesToExistingText": false,
+        "textType": "richText",
+        "linesForEditing": 1
+        }
+    },
+
     {
     "name":"Contact",
     "displayName":"Contact",
