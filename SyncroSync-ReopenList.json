@@ -1,66 +1,55 @@
 {
-    "displayName": "Syncro Reopen On",
-    "columns": [
-        {
-            "name": "TicketNumber",
-            "displayName": "Ticket Number",
-            "indexed": true,
-            "text": {
-                "allowMultipleLines": false,
-                "appendChangesToExistingText": false,
-                "textType": "plain"
-            }
-        },
-        {
-            "name": "TicketSubject",
-            "displayName": "Ticket Subject",
-            "indexed": true,
-            "text": {
-                "allowMultipleLines": false,
-                "appendChangesToExistingText": false,
-                "textType": "plain"
-            }
-        },
-        {
-            "name": "ReopenOn",
-            "displayName": "Reopen On",
-            "indexed": true,
-            "datetime": {
-                "displayAs": "standard",
-                "format": "dateOnly"
-            }
-        },
-        {
-            "name": "AddedBy",
-            "displayName": "Added By",
-            "indexed": true,
-            "text": {
-                "allowMultipleLines": false,
-                "appendChangesToExistingText": false,
-                "textType": "plain"
-            }
-        },
-        {
-            "name": "TicketLink",
-            "displayName": "Link",
-            "text": {
-                "allowMultipleLines": true,
-                "appendChangesToExistingText": false,
-                "textType": "richText",
-                "linesForEditing": 1
-            }
-        },
-        {
-            "name": "TicketID",
-            "displayName": "Ticket ID",
-            "text": {
-                "allowMultipleLines": false,
-                "appendChangesToExistingText": false,
-                "textType": "plain"
-            }
+"displayName": "Syncro Reopen On",
+"columns": [
+    {
+        "name": "TicketNumber",
+        "displayName": "Ticket Number",
+        "indexed": true,
+        "text": {
+            "allowMultipleLines": false,
+            "appendChangesToExistingText": false,
+            "textType": "plain"
         }
-    ],
-    "list": {
-        "template": "genericList"
+    },
+    {
+        "name": "ReopenOn",
+        "displayName": "Reopen On",
+        "dateTime": {
+            "displayAs": "standard",
+            "format": "dateOnly"
+        }
+    },
+    {
+        "name": "AddedBy",
+        "displayName": "Added By",
+        "indexed": true,
+        "text": {
+            "allowMultipleLines": false,
+            "appendChangesToExistingText": false,
+            "textType": "plain"
+        }
+    },
+    {
+        "name": "TicketLink",
+        "displayName": "Link",
+        "text": {
+            "allowMultipleLines": true,
+            "appendChangesToExistingText": false,
+            "textType": "richText",
+            "linesForEditing": 1
+        }
+    },
+    {
+        "name": "TicketID",
+        "displayName": "Ticket ID",
+        "text": {
+            "allowMultipleLines": false,
+            "appendChangesToExistingText": false,
+            "textType": "plain"
+        }
+    }
+],
+"list": {
+    "template": "genericList"
     }
 }
