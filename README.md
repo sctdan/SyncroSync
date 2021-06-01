@@ -32,7 +32,9 @@ When a ticket is marked as Resolved, a webhook fires and initiates the Flow.  Th
 
 
 
-## SharePoint Ticket List Creation
+# SharePoint
+
+## Ticket List Creation
 If you have the ability to use the Graph API, that is the fastest option.  You don't need an azure app or anything setup, Graph Explorer lets you interact with your data without one. You can create the list manually, just reference the JSON file for the columns and their settings.  Ignore this section if you will be creating the list manually.  
 
 1.	Go here and sign-in on the left side: https://developer.microsoft.com/en-us/graph/graph-explorer
@@ -111,7 +113,7 @@ Following the same steps as the ticket list creation, use the SyncroSync-ReOpenL
 If you want to utilize the KB functionality, create a shared ToDo list.
 
 
-## Power Automate
+# Import Solution into Power Automate
 1. Go to the Power Automate site https://us.flow.microsoft.com/
     1. Click on Solutions
     1. Click Import 
@@ -141,7 +143,9 @@ If you want to utilize the KB functionality, create a shared ToDo list.
 1. Copy the HTTP POST URL provided there.  If you don't see it, Save the flow and it should generate.
 
 
-## Syncro
+# Syncro Set
+
+## Notification Set
 1. Go to Admin -> Notification Center
 2. Create a New Notification Set
     3. Name: SyncroSync (or whatever you want, has no impact elsewhere)
@@ -149,7 +153,7 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     5. Find the 'Ticket - Was Resolved' event and check the Webhook box
     6. Click Create Notification Set
 
-### To utilize the ReOpen and KB functionality, configure a Custom Ticket Field Type.  If you don't want to utilize either, just don't create the fields
+## To utilize the ReOpen and KB functionality, configure a Custom Ticket Field Type.  If you don't want to utilize either, just don't create the fields
 1. Go to Admin -> Tickets -> Ticket Custom Fields
 2. Create New Custom Field Type.  Name it whatever you'd like, we used 'Post-Ticket Actions'
 3. Create New Field (Names must be exactly what it defined below)
