@@ -130,14 +130,14 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     1. Ticket Type Ignore - If you want to prevent certain Problem Types from syncing, you can add those here.  Must be formatted like so:   ["Alerts","whatever"]   
     1. SP ReOpen List Name - The exact name or ID of the reopen list
     1. ToDo List ID --- ###What happens if they don't set a value?
-    2. Enable KB - Set to No if you don't want to utilize the KB ToDo functionality
-    3. Enable ReOpen - Set to No if you don't want to utilize the ticket ReOpen functionality
-    4. Timezone - Enter the name of your timezone.  Standard US ones are-
-    	5. Eastern Standard Time
-    	6. Central Standard Time
-    	7. Mountain Standard Time
-    	8. Pacific Standard Time
-    	9. See here for an entiere list- https://ss64.com/nt/timezones.html
+    1. Enable KB - Set to No if you don't want to utilize the KB ToDo functionality
+    1. Enable ReOpen - Set to No if you don't want to utilize the ticket ReOpen functionality
+    1. Timezone - Enter the name of your timezone.  Standard US ones are-
+    	1. Eastern Standard Time
+    	1. Central Standard Time
+    	1. Mountain Standard Time
+    	1. Pacific Standard Time
+    	1. See here for an entiere list- https://ss64.com/nt/timezones.html
 
 1. Click Import
 1. Once finished, click on the SyncroSync solution to open, then click Edit
