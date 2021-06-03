@@ -144,6 +144,13 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     	1. Mountain Standard Time
     	1. Pacific Standard Time
     	1. See here for an entiere list- https://ss64.com/nt/timezones.html
+    2. Syncro API Key - Create an API Token in Syncro (Admin -> API Tokens)
+    	3. Requires 
+    		4. Ticket - Edit
+    		5. Ticket - View Details
+    		6. Ticket - List/Search
+
+
 
 1. Click Import
 1. Once finished, click on the SyncroSync solution to open, then click Edit
