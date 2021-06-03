@@ -173,3 +173,6 @@ If you don't want to utilize either, just don't create the fields
 	1. Name: KB Title - Text Field - Hidden=true
 
 
+Special Note:  Reopen on daily check
+Currently, you can't use environment variables in certain flow triggers, including the Recurrence trigger used here.  This means you can't change the timezone or time of day that the flow runs.  It's set to run at 6am EST.
+If that doesn't work for you, you can disable the Reopen Daily Check flow in the solution and just import the flow itself.  That requires some extra customization.  Please see the ReopenDailyCheck document for further instructions.
