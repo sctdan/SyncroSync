@@ -99,7 +99,7 @@ _If you use a light theme, change the “color” value from “white” to “b
 3. Choose Standard View
 4. Name: Whatever you want
 	1. Check 'Make this the default view'
-	1. All the default columns should already be selected, you can change the sort order if you'd like
+	1. All the default columns should already be selected, but you want to uncheck Comments.  
 	1. Sort:
 		1. First sort by Resolved At in descending order
 	1.  Item Limit:
