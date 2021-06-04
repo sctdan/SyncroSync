@@ -128,14 +128,14 @@ If you want to utilize the KB functionality, create a shared ToDo list.
 	1. For each Connection, Select 'New Connection' and select the account to use.
 
 
-3. You'll be prompted to set some environment variables now
+3. You'll be prompted to set some environment variables now.  You must put a value in for each.
     1. Notification List- List of email addresses to notifiy if the flow fails, separated by semi-colon
     1. SP Site Address- Full URL or ID of the site where your list will live.  If root site, it's just https://yourdomain.sharepoint.com/
     1. Syncro Subdomain - The X in https://X.syncromsp.com
     1. SP Ticket List Name - The exact name or ID of the ticket list
-    1. Ticket Type Ignore - If you want to prevent certain Problem Types from syncing, you can add those here.  Must be formatted like so:   ["Alerts","whatever"]   
+    1. Ticket Type Ignore - If you want to prevent certain Problem Types from syncing, you can add those here.  Must be formatted like so:   ["Alerts","whatever"]   If none, just put in [""]
     1. SP ReOpen List Name - The exact name or ID of the reopen list
-    1. ToDo List ID --- ###What happens if they don't set a value?
+    1. ToDo List Name -- Exact name of the list in ToDo.  If you don't want to utilize, put N/A
     1. Enable KB - Set to No if you don't want to utilize the KB ToDo functionality
     1. Enable ReOpen - Set to No if you don't want to utilize the ticket ReOpen functionality
     1. Timezone - Enter the name of your timezone.  Standard US ones are-
@@ -153,9 +153,10 @@ If you want to utilize the KB functionality, create a shared ToDo list.
 
 
 1. Click Import
-1. Once finished, click on the SyncroSync solution to open, then click Edit
-1. Click on the 'When a HTTP request is received' action to expand it
-1. Copy the HTTP POST URL provided there.  If you don't see it, Save the flow and it should generate.
+1. Once finished, click on Publish All Customizations in the menu.
+2. Then click on the SyncroSync solution to open, then click Edit
+3. Click on the 'When a HTTP request is received' action to expand it
+4. Copy the HTTP POST URL provided there.  If you don't see it, Save the flow and it should generate.
 
 
 
