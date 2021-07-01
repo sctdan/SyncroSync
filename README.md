@@ -1,3 +1,5 @@
+*This guide is not complete yet
+
 # SyncroSync
 Syncro Sync is a simple utility that will automatically sync your Syncro or RepairShopr tickets to SharePoint.  This provides a couple great benefits:
 
