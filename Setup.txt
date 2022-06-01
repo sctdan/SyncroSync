@@ -125,9 +125,10 @@ If you want to utilize the KB functionality, create a shared ToDo list.
 
 1. Click Import
 1. Once finished, click on Publish All Customizations in the menu.
-2. Then click on the SyncroSync solution to open, then click Edit
-3. Click on the 'When a HTTP request is received' action to expand it
-4. Copy the HTTP POST URL provided there.  If you don't see it, Save the flow and it should generate.
+2. Then click on the SyncroSync flow to open, then click Edit
+3. Save the flow to generate webhook URL
+4. Click on the 'When a HTTP request is received' action to expand it
+5. Copy the HTTP POST URL provided there.  
 
 
 
