@@ -110,6 +110,27 @@
         }
     },
     {
+    "name":"AssetID",
+    "displayName":"Asset ID",
+    "text":
+        {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
+        }
+    },
+    {
+    "name":"AssetName",
+    "displayName":"AssetName",
+    "indexed":true,
+    "text":
+        {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "textType": "plain"
+        }
+    },   
+    {
     "name":"CustomerID",
     "displayName":"Customer ID",
     "indexed":true,
