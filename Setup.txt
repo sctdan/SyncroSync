@@ -1,12 +1,12 @@
 
-#Setup Instructions:
+# Setup Instructions:
 
 
 
-#SharePoint
+# SharePoint
 
 
-##Ticket List Creation
+## Ticket List Creation
 If you have the ability to use the Graph API, that is the fastest option.  You don't need an azure app or anything setup, Graph Explorer lets you interact with your data without one. You can create the list manually, just reference the JSON file for the columns and their settings.  Ignore this section if you will be creating the list manually.  
 
 1.	Go here and sign-in on the left side: https://developer.microsoft.com/en-us/graph/graph-explorer
