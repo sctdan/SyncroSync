@@ -110,16 +110,16 @@ If you want to utilize the KB functionality, create a shared ToDo list.
     1. Enable KB - Set to No if you don't want to utilize the KB ToDo functionality
     1. Enable ReOpen - Set to No if you don't want to utilize the ticket ReOpen functionality
     1. Timezone - Enter the name of your timezone.  Standard US ones are-
-    	1. Eastern Standard Time
-    	1. Central Standard Time
-    	1. Mountain Standard Time
-    	1. Pacific Standard Time
-    	1. See here for an entiere list- https://ss64.com/nt/timezones.html
+    1. Eastern Standard Time
+       - Central Standard Time
+       - Mountain Standard Time
+       - Pacific Standard Time
+       - See here for an entiere list- https://ss64.com/nt/timezones.html
     2. Syncro API Key - Create an API Token in Syncro (Admin -> API Tokens)
-    	3. Requires 
-    		4. Ticket - Edit
-    		5. Ticket - View Details
-    		6. Ticket - List/Search
+       - Requires 
+    	 - Ticket - Edit
+    	 - Ticket - View Details
+    	 - Ticket - List/Search
 
 
 
